@@ -71,6 +71,7 @@ body {
     -ms-flex-direction: column;
     min-height: 100%;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -272,6 +273,10 @@ a:active {
     text-align: left;
 }
 
+.visible_600 {
+    display: none;
+}
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -293,6 +298,7 @@ header {
 
 .header_bg {
     width: 100%;
+    min-width: 1330px;
     height: auto;
     position: absolute;
     top: -5px;
@@ -331,12 +337,11 @@ header {
     width: auto;
     height: auto;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .main_nav_wrapp {
-    display: inline-block;
-    vertical-align: top;
-    margin: 13px 5px;
+
 }
 
 .main_nav {
@@ -384,11 +389,12 @@ header {
     transition-timing-function: ease;
 }
 
-.main_nav > li > a:after {
+.main_nav > li > .dr_btn {
     display: block;
-    content: "";
     width: 13px;
     height: 10px;
+    border: none;
+    background-color: transparent;
     background-image: url(img/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -396,6 +402,7 @@ header {
     position: absolute;
     top: 25px;
     right: 11px;
+    cursor: pointer;
 }
 
 .main_nav > li > a:before {
@@ -573,6 +580,7 @@ header {
 }
 
 .thumb_1 p {
+    text-align: left;
     font-family: 'TacticSans-Reg';
     font-size: 18px;
     line-height: 148%;
@@ -650,6 +658,10 @@ header {
 
 .header_inlines > div {
     padding: 11px 32px;
+}
+
+.tel_link_resp {
+    display: none;
 }
 
 .tel_link {
@@ -908,9 +920,7 @@ header {
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
-    /*display: inline-block;*/
     display: none;
-    vertical-align: top;
     width: 45px;
     height: 37px;
     background: transparent;
@@ -965,7 +975,7 @@ header {
     position: relative;
     width: 35px;
     top: 2px;
-    left: 0;
+    left: 4px;
     background: #e9ba5f;
 }
 
@@ -1245,6 +1255,12 @@ header {
     padding-top: 36px;
 }
 
+.callback_two_cols > div:nth-child(1) img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+}
+
 .callback_two_cols h3 {
     padding: 10px 0;
     font-family: 'TacticSans-Med';
@@ -1343,6 +1359,17 @@ header {
     padding: 0 0 0 60px;
 }
 
+.comp {
+
+}
+
+.comp img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .two_cols h3 {
     padding-top: 15px;
     font-family: 'TacticSans-Med';
@@ -1403,7 +1430,7 @@ header {
 }
 
 .select_crane_title {
-    padding: 17px 0 17px 0;
+    padding: 17px 0 3px 0;
 }
 
 .select_crane_title h3 {
@@ -1427,6 +1454,8 @@ header {
     display: -webkit-flex;
     align-items: flex-end;
     -webkit-align-items: flex-end;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 0 -17px;
 }
 
@@ -1447,6 +1476,8 @@ header {
     display: -webkit-flex;
     align-items: flex-end;
     -webkit-align-items: flex-end;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 0 -8px;
 }
 
@@ -1486,7 +1517,7 @@ header {
     vertical-align: top;
     position: relative;
     width: 150px;
-    height: 92px;
+    height: 110px;
     cursor: pointer;
     padding-left: 40px;
 }
@@ -1604,6 +1635,8 @@ header {
 .partners_wrapp > img {
     display: block;
     margin: 0 auto;
+    width: auto;
+    max-width: 100%;
 }
 
 /*-- /Section 6 - Main Page --*/
