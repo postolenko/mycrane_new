@@ -187,6 +187,33 @@
 
 /*-- /Header --*/
 
+/*-- Footer --*/
+
+.footer_cols > div:nth-child(1) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer_cols > div:nth-child(2) {
+    width: 40%;
+    padding-left: 0;
+}
+
+.footer_cols > div:nth-child(3) {
+    width: 30%;
+}
+
+.footer_cols > div:nth-child(4) {
+    width: 30%;
+    padding-right: 0;
+}
+
+.corp_wrapp {
+    padding-top: 21px;
+}
+
+/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -258,6 +285,7 @@ h2 {
 	display: none;
 	width: 100%;
 	min-width: 100% !important;
+	padding: 5px 20px 7px 20px;
 	position: relative;
 	top: 0;
 	left: 0 !important;
@@ -368,6 +396,34 @@ h2 {
 }
 
 /*-- /Section 7 - Main Page --*/
+
+}
+
+@media only screen and (max-width: 700px) {
+
+/*-- Footer --*/
+
+.footer_cols > div:nth-child(1) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer_cols > div:nth-child(2) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer_cols > div:nth-child(3) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer_cols > div:nth-child(4) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Footer --*/
 
 }
 
@@ -540,6 +596,14 @@ h2 {
 }
 
 /*-- /Section 5 - Main Page --*/
+
+/*-- Section 8 - Main Page --*/
+
+.article {
+    margin: 25px auto 25px auto;
+}
+
+/*-- /Section 8 - Main Page --*/
 
 }
 
