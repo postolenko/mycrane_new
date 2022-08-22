@@ -340,10 +340,6 @@ header {
     max-height: 100%;
 }
 
-.main_nav_wrapp {
-
-}
-
 .main_nav {
     display: flex;
     display: -webkit-flex;
@@ -1357,10 +1353,6 @@ header {
 .two_cols > .right_col {
     width: calc(100% - 660px);
     padding: 0 0 0 60px;
-}
-
-.comp {
-
 }
 
 .comp img {
