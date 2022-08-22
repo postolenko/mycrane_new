@@ -86,4 +86,13 @@ $(document).ready(function() {
       }
     });
 
+    $(".main_nav > li > a").on("click", function(e) {
+      if(bodyWidth <= 900) {
+        e.preventDefault();
+        parent = $(this).closest("li");
+        drBtn = parent.children(".dr_btn");
+        drBtn.trigger("click");
+      }
+    });
+
 });
