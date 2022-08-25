@@ -813,6 +813,7 @@ header {
 .lang_tumb {
     display: flex;
     display: -webkit-flex;
+    cursor: pointer;
 }
 
 .lang_tumb > div:nth-child(1) {
@@ -822,6 +823,44 @@ header {
 .lang_tumb > div:nth-child(2) {
     width: calc(100% - 35px);
     padding-top: 2px;
+}
+
+.p_val .lang_tumb p {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.p_val .lang_tumb:active p,
+.p_val .lang_tumb.active p {
+    border-bottom: 1px solid transparent;
+}
+
+.p_val .lang_tumb:active p,
+.p_val .lang_tumb.active p {
+    border-bottom: 1px solid #000;
+}
+
+.p_val .lang_tumb:hover p {
+    border-bottom: 1px solid #000;
 }
 
 .reg_list {
