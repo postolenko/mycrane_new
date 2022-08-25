@@ -825,7 +825,7 @@ header {
     padding-top: 2px;
 }
 
-.p_val .lang_tumb p {
+.lang_tumb p {
     display: inline-block;
     vertical-align: top;
     -webkit-transition-property: border;
@@ -849,17 +849,17 @@ header {
     transition-timing-function: ease;
 }
 
-.p_val .lang_tumb:active p,
-.p_val .lang_tumb.active p {
+.lang_tumb:active p,
+.lang_tumb.active p {
     border-bottom: 1px solid transparent;
 }
 
-.p_val .lang_tumb:active p,
-.p_val .lang_tumb.active p {
+.lang_tumb:active p,
+.lang_tumb.active p {
     border-bottom: 1px solid #000;
 }
 
-.p_val .lang_tumb:hover p {
+.lang_tumb:hover p {
     border-bottom: 1px solid #000;
 }
 
